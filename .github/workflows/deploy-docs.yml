@@ -36,7 +36,7 @@ jobs:
 
       - name: Build Docs
         env:
-          BASE: /docs/
+          BASE: /
           HOSTNAME: https://ephzyr.github.io/
           NODE_OPTIONS: --max_old_space_size=8192
         run: pnpm run src:build
