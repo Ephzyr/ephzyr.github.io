@@ -11,7 +11,7 @@ export default hopeTheme({
 
   repo: "ephzyr/docs",
 
-  docsDir: "docs",
+  docsDir: "src",
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
