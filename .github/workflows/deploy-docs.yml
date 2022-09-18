@@ -36,9 +36,7 @@ jobs:
       - name: Build Docs
         env:
           NODE_OPTIONS: --max_old_space_size=8192
-        run: |-
-          pnpm run docs:build
-          > docs/.vuepress/dist/.nojekyll
+        run: pnpm run docs:build
 
       - name: Deploy Docs
         uses: JamesIves/github-pages-deploy-action@v4
