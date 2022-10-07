@@ -1,6 +1,6 @@
-import { sidebar } from "vuepress-theme-hope";
+import type { HopeThemeSidebarConfig } from "vuepress-theme-hope";
 
-export const zhSidebar = sidebar({
+export const sidebarZh: HopeThemeSidebarConfig = {
   "/zh/": [
     "",
     {
@@ -18,4 +18,4 @@ export const zhSidebar = sidebar({
     },
     "slides",
   ],
-});
+}

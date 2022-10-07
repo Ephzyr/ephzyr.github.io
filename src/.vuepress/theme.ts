@@ -1,27 +1,27 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { navbarEn, navbarZh } from "./navbar/index.js";
+import { sidebarEn, sidebarZh } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://ephzyr.github.io/",
+  hostname: "https://ephzyr.github.io",
 
   iconAssets: "iconfont",
 
   logo: "/logo.svg",
 
-  repo: "ephzyr/docs",
+  repo: "Ephzyr/docs",
 
-  docsDir: "src",
+  docsDir: "src/",
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
   locales: {
     "/": {
       // navbar
-      navbar: enNavbar,
+      navbar: navbarEn,
 
       // sidebar
-      sidebar: enSidebar,
+      sidebar: sidebarEn,
 
       footer: "Default footer",
 
@@ -37,10 +37,10 @@ export default hopeTheme({
      */
     "/zh/": {
       // navbar
-      navbar: zhNavbar,
+      navbar: navbarZh,
 
       // sidebar
-      sidebar: zhSidebar,
+      sidebar: sidebarZh,
 
       footer: "默认页脚",
 

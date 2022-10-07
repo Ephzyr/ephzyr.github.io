@@ -1,6 +1,6 @@
-import { navbar } from "vuepress-theme-hope";
+import type { HopeThemeNavbarConfig } from "vuepress-theme-hope";
 
-export const enNavbar = navbar([
+export const navbarEn: HopeThemeNavbarConfig = [
   "/",
   { text: "Demo", icon: "discover", link: "/demo/" },
   {
@@ -27,4 +27,4 @@ export const enNavbar = navbar([
     icon: "note",
     link: "https://vuepress-theme-hope.github.io/v2/",
   },
-]);
+];
