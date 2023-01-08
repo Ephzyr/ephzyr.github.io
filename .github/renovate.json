@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "vuepress",
+        "@vuepress/client"
+      ],
+      "allowedVersions": "!/pre.*$/"
+    }
+  ]
+}
