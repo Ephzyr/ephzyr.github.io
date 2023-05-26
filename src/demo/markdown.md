@@ -336,7 +336,7 @@ $$
 
 #### Include files
 
-@include(./README.md{11-17})
+<!-- @include: ./README.md{11-17} -->
 
 - [View Detail](https://vuepress-theme-hope.github.io/v2/guide/markdown/include.html)
 
