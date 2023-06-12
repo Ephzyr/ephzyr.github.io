@@ -1,8 +1,12 @@
-import type { HopeThemeNavbarConfig } from "vuepress-theme-hope";
+import type { NavbarConfig } from "vuepress-theme-hope";
 
-export const navbarEn: HopeThemeNavbarConfig = [
+export const enNavbarConfig: NavbarConfig = [
   "/",
-  { text: "Demo", icon: "discover", link: "/demo/" },
+  {
+    text: "Demo",
+    icon: "discover",
+    link: "/demo/",
+  },
   {
     text: "Guide",
     icon: "creative",
@@ -12,13 +16,27 @@ export const navbarEn: HopeThemeNavbarConfig = [
         text: "Bar",
         icon: "creative",
         prefix: "bar/",
-        children: ["baz", { text: "...", icon: "more", link: "" }],
+        children: [
+          "baz",
+          {
+            text: "...",
+            icon: "more",
+            link: ""
+          },
+        ],
       },
       {
         text: "Foo",
         icon: "config",
         prefix: "foo/",
-        children: ["ray", { text: "...", icon: "more", link: "" }],
+        children: [
+          "ray",
+          {
+            text: "...",
+            icon: "more",
+            link: ""
+          },
+        ],
       },
     ],
   },

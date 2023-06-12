@@ -1,98 +1,64 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { navbarEn, navbarZh } from "./navbar/index.js";
-import { sidebarEn, sidebarZh } from "./sidebar/index.js";
+import { enNavbarConfig, zhNavbarConfig } from "./navbar/index.js";
+import { enSidebarConfig, zhSidebarConfig } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://ephzyr.github.io",
-
-  iconAssets: "iconfont",
-
-  logo: "/logo.svg",
 
   repo: "Ephzyr/docs",
 
   docsDir: "src/",
 
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
-
   locales: {
     "/": {
-      // navbar
-      navbar: navbarEn,
-
-      // sidebar
-      sidebar: sidebarEn,
-
-      footer: "Default footer",
-
-      displayFooter: true,
-
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
+      navbar: enNavbarConfig,
+      sidebar: enSidebarConfig,
     },
-
-    /**
-     * Chinese locale config
-     */
     "/zh/": {
-      // navbar
-      navbar: navbarZh,
-
-      // sidebar
-      sidebar: sidebarZh,
-
-      footer: "默认页脚",
-
-      displayFooter: true,
-
-      // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
-      },
+      navbar: zhNavbarConfig,
+      sidebar: zhSidebarConfig,
     },
   },
 
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
+      "/demo/encrypt.html": "1234",
+      "/zh/demo/encrypt.html": "1234",
     },
   },
 
   plugins: {
-    // Disable features you don't want here
     mdEnhance: {
       align: true,
       attrs: true,
+      card: true,
       chart: true,
       codetabs: true,
-      container: true,
       demo: true,
       echarts: true,
+      figure: true,
       flowchart: true,
       gfm: true,
+      imgLazyload: true,
+      imgMark: true,
       imgSize: true,
       include: true,
-      katex: true,
-      lazyLoad: true,
+      mathjax: true,
       mark: true,
       mermaid: true,
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
+      presentation: ["highlight", "math", "search", "notes", "zoom"],
       stylize: [
         {
-          matcher: "Recommanded",
+          matcher: "Recommended",
           replacer: ({ tag }) => {
             if (tag === "em")
               return {
                 tag: "Badge",
                 attrs: { type: "tip" },
-                content: "Recommanded",
+                content: "Recommended",
               };
           },
         },
