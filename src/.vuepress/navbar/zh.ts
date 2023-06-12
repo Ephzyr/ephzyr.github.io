@@ -1,6 +1,6 @@
-import type { NavbarConfig } from "vuepress-theme-hope";
+import { navbar } from "vuepress-theme-hope";
 
-export const zhNavbarConfig: NavbarConfig = [
+export const zhNavbarConfig = navbar([
   "/zh/",
   {
     text: "案例",
@@ -45,4 +45,4 @@ export const zhNavbarConfig: NavbarConfig = [
     icon: "note",
     link: "https://vuepress-theme-hope.github.io/v2/zh/",
   },
-];
+]);
