@@ -1,7 +1,7 @@
 ---
-title: Guides
+title: Features demo
 index: false
-icon: creative
+icon: laptop-code
 category:
   - Guide
 ---
