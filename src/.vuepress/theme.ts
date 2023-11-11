@@ -36,7 +36,6 @@ export default hopeTheme({
 
       displayFooter: true,
 
-      // page meta
       metaLocales: {
         editLink: "在 GitHub 上编辑此页",
       },
@@ -54,12 +53,15 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
-      card: true,
 
       // install chart.js before enabling it
       // chart: true,
 
       codetabs: true,
+
+      // insert component easily
+      // component: true,
+
       demo: true,
 
       // install echarts before enabling it
@@ -70,7 +72,9 @@ export default hopeTheme({
       // install flowchart.ts before enabling it
       // flowchart: true,
 
-      gfm: true,
+      // gfm requires mathjax-full to provide tex support
+      // gfm: true,
+
       imgLazyload: true,
       imgSize: true,
       include: true,
