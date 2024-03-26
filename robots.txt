@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://ephzyr.github.io/docs/sitemap.xml
