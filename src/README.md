@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: Project home
-heroImage: /logo.svg
+heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
@@ -41,10 +41,15 @@ highlights:
         details: Check markdown links
         link: https://theme-hope.vuejs.press/guide/markdown/others.html#link-check
 
-      - title: Custom Container
+      - title: Hint box
         icon: box-archive
         details: Decorate Markdown content with styles
-        link: https://theme-hope.vuejs.press/guide/markdown/container.html
+        link: https://theme-hope.vuejs.press/guide/markdown/hint.html
+
+      - title: GFM alerts
+        icon: bell
+        details: GFM alerts
+        link: https://theme-hope.vuejs.press/guide/markdown/alert.html
 
       - title: Tabs
         icon: table-columns
@@ -92,8 +97,8 @@ highlights:
         link: https://theme-hope.vuejs.press/guide/markdown/image.html
 
       - title: Component Support
-        icon: puzzle-piece
-        details: Easily insert components in Markdown
+        icon: square
+        details: Add component easily in Markdown
         link: https://theme-hope.vuejs.press/guide/markdown/component.html
 
       - title: Chart Support
@@ -131,6 +136,11 @@ highlights:
         details: Show living vue component in playground
         link: https://theme-hope.vuejs.press/guide/markdown/vue-playground.html
 
+      - title: Sandpack playground Support
+        icon: code
+        details: A live coding environment driven by Sandpack.
+        link: https://theme-hope.vuejs.press/guide/markdown/sandpack.html
+
       - title: Code Demo Support
         icon: laptop-code
         details: You can insert code demo easily
@@ -165,7 +175,7 @@ highlights:
       - title: Slide Page
         icon: person-chalkboard
         details: Adding slide pages to display things you like
-        link: https://theme-hope.vuejs.press/guide/layout/slides
+        link: https://theme-hope.vuejs.press/guide/layout/slides.html
 
       - title: More
         icon: ellipsis

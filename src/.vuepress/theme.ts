@@ -50,6 +50,10 @@ export default hopeTheme({
   },
 
   plugins: {
+    components: {
+      components: ["Badge", "VPCard"],
+    },
+
     mdEnhance: {
       align: true,
       attrs: true,

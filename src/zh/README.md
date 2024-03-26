@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: 项目主页
-heroImage: /logo.svg
+heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
@@ -41,10 +41,15 @@ highlights:
         details: 检查 Markdown 链接
         link: https://theme-hope.vuejs.press/zh/guide/markdown/others.html#link-check
 
-      - title: 自定义容器支持
+      - title: GFM 警告
+        icon: box-archive
+        details: GFM 风格的警告提示
+        link: https://theme-hope.vuejs.press/zh/guide/markdown/alert.html
+
+      - title: 提示容器支持
         icon: box-archive
         details: 用样式装饰 Markdown 内容
-        link: https://theme-hope.vuejs.press/zh/guide/markdown/container.html
+        link: https://theme-hope.vuejs.press/zh/guide/markdown/hint.html
 
       - title: 选项卡
         icon: table-columns
@@ -93,7 +98,7 @@ highlights:
 
       - title: 组件支持
         icon: puzzle-piece
-        details: 在 Markdown 中轻松插入组件
+        details: 在 Markdown 中展示组件
         link: https://theme-hope.vuejs.press/zh/guide/markdown/component.html
 
       - title: 图表支持
@@ -131,6 +136,11 @@ highlights:
         details: 在交互演示中展示 Vue 组件
         link: https://theme-hope.vuejs.press/zh/guide/markdown/vue-playground.html
 
+      - title: Sandpack 交互演示支持
+        icon: code
+        details: Sandpack 驱动的实时的编码环境
+        link: https://theme-hope.vuejs.press/zh/guide/markdown/sandpack.html
+
       - title: 代码案例支持
         icon: laptop-code
         details: 你可以很方便的插入代码案例
@@ -139,7 +149,7 @@ highlights:
       - title: 幻灯片支持
         icon: person-chalkboard
         details: 通过 Reveal.js 在 Markdown 中插入幻灯片
-        link: https://theme-hope.vuejs.press/zh/guide/markdown/revealjs.html
+        link: https://theme-hope.vuejs.press/zh/guide/markdown/revealjs/
 
   - header: 布局
     description: 一个带有完整无障碍支持的响应式布局。
@@ -165,7 +175,7 @@ highlights:
       - title: 幻灯片页面
         icon: person-chalkboard
         details: 添加幻灯片页面以显示你喜欢的内容
-        link: https://theme-hope.vuejs.press/zh/guide/layout/slides
+        link: https://theme-hope.vuejs.press/zh/guide/layout/slides.html
 
       - title: 更多
         icon: ellipsis
@@ -220,7 +230,7 @@ highlights:
 
       - title: 博客主页
         icon: home
-        details: 全新播客主页
+        details: 全新博客主页
         link: https://theme-hope.vuejs.press/zh/guide/blog/home.html
 
       - title: 博主信息

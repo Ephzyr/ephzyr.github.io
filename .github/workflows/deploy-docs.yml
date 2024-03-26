@@ -7,6 +7,9 @@ on:
       # make sure this is the branch you are using
       - main
 
+permissions:
+  contents: write
+
 jobs:
   deploy-gh-pages:
     runs-on: ubuntu-latest
